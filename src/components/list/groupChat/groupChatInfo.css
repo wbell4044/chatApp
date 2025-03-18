@@ -1,0 +1,183 @@
+.group-chat-info {
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+/* Search and Add Section */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+.searchBar {
+  flex: 1;
+  background-color: rgba(17, 25, 40, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.searchBar input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  flex: 1;
+  font-size: 14px;
+}
+
+.searchBar img {
+  width: 25px;
+  height: 25px;
+}
+
+.add {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(17, 25, 40, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Popup menu */
+.popup {
+  padding: 20px;
+  background-color: #1e1e1e; /* Same dark background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  position: absolute; /* Position the popup absolutely */
+  top: 60px; /* 60px from the top of the parent element */
+  width: 20%; /* Set a fixed width for the popup */
+  min-width: 250px;
+  z-index: 10; /* Ensure the popup is on top */
+  color: white; /* White text */
+}
+
+.close-button {
+  position: absolute; /* Position it relative to the popup */
+  top: 1px; /* 1px from the top */
+  right: 10px; /* 10px from the right */
+  font-size: 36px; /* Set a large font size for the "×" symbol */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  color: white; /* Set the color of the close button */
+  cursor: pointer; /* Change the cursor to a pointer when hovering */
+}
+
+.close-button:hover {
+  color: #f44336; /* Red color on hover */
+}
+
+/* Search bar inside popup */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: rgba(17, 25, 40, 0.7);
+  flex: 1;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  background-color: #5183fe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Dropdown for group list */
+.dropdown {
+  max-height: 60vh; 
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding-right: 10px; /* Optional: Add some padding to prevent the scrollbar from overlapping the text */
+  list-style-type: none; /* Remove default list styling */
+  margin-top: 10px; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.dropdown li {
+  padding: 10px;
+  background-color: rgba(17, 25, 40, 0.7);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.dropdown li:hover {
+  background-color: #3207f0;
+}
+
+.popup p {
+  color: lightgray;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Ensuring avatar, username, and status are on the same line */
+.item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #dddddd35;
+}
+
+.item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1; /* Ensure it takes the remaining space */
+}
+
+.texts .username {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.status.online {
+  color: #4CAF50;
+}
+
+.status.offline {
+  color: #F44336;
+}
+
+.texts p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #a5a5a5;
+}
