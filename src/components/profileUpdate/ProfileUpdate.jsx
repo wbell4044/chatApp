@@ -78,7 +78,7 @@ const ProfileUpdate = () => {
             />
             <img
               src={image ? URL.createObjectURL(image) : prevImage || './avatar.png'}
-              alt="Profile"
+              alt="Profile Picture"
             />
             Upload Profile Picture
           </label>
@@ -100,7 +100,7 @@ const ProfileUpdate = () => {
         <img
           className="profile-pic"
           src={image ? URL.createObjectURL(image) : prevImage || './avatar.png'}
-          alt="Profile"
+          alt="Profile Picture"
         />                
       </div>
     </div>

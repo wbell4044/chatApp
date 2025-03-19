@@ -2,6 +2,8 @@
 .detail {
   flex: 1;
   padding: 20px; /* Optional padding */
+  overflow-x: auto;
+  max-height: 90vh;  
 }
 
 /* User profile container */
@@ -11,7 +13,7 @@
   align-items: center;
   gap: 10px;
   padding: 30px 20px;
-  border-bottom: 1px solid #dddddd35;
+  border-bottom: 1px solid #dddddd35;  
 }
 
 .detail .user img {
